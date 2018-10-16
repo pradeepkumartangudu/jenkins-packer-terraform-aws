@@ -1,7 +1,7 @@
 pipeline { 
     agent any 
     stages {
-        stage('Build') { 
+        stage('Build & Deploy') { 
             steps { 
                 load "./paramaters.groovy"
                 sh 'echo $bucketname'
