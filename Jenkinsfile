@@ -4,7 +4,6 @@ pipeline {
         stage('Build') { 
             steps { 
                 load "./paramaters.groovy"
-				#https://www.packer.io/guides/packer-on-cicd/
                 sh 'echo $bucketname'
 		sh 'wget -q https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_linux_amd64.zip'
                 sh 'unzip -qo terraform_0.11.8_linux_amd64.zip'
